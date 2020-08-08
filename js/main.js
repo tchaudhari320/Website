@@ -227,7 +227,7 @@
 			$.ajax({      	
 
 		      type: "POST",
-		      url: "inc/sendEmail.php",
+		      url: "https://github.com/ashendra04/Website/blob/master/inc/sendEmail.php",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
@@ -254,7 +254,7 @@
 		      error: function() {
 
 		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
+		      	$('#message-warning').html("This feature is not available :(");
 		         $('#message-warning').fadeIn();
 
 		      }
