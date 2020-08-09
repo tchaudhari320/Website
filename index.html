@@ -3,8 +3,7 @@
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	
-		<script src="https://www.google.com/recaptcha/api.js?render=6LftZbwZAAAAANkMZ7ftrb91Uay1PihCI6oeM2aQ"></script>
+
 
    <!--- basic page needs
    ================================================== -->
@@ -244,7 +243,6 @@
 	               </div>
                   <div class="form-field"> 
                      <button class="submitform">Submit</button>
-			  <input type="text" id_"grecaptcha.execute" name="grecaptcha.execute">
                      <div id="submit-loader">
                         <div class="text-loader">Sending...</div>                             
        				      <div class="s-loader">
@@ -363,18 +361,7 @@
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
-	
-	   <script>
-      function onClick(e) {
-        e.preventDefault();
-        grecaptcha.ready(function() {
-          grecaptcha.execute('6LftZbwZAAAAANkMZ7ftrb91Uay1PihCI6oeM2aQ', {action: 'submit'}).then(function(token) {
-              console.log(token);
-          });
-        });
-      }
-  </script>
-	
+
 
 </body>
 
