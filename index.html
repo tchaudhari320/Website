@@ -241,7 +241,7 @@
                   </div>
                   <div class="form-field">
 	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-			  <input type="text" name="g-recaptcha-response">
+			  <input type="text" id_"g-recaptcha-response" name="g-recaptcha-response">
 	               </div>
                   <div class="form-field"> 
                      <button class="submitform">Submit</button>
@@ -369,7 +369,7 @@
         e.preventDefault();
         grecaptcha.ready(function() {
           grecaptcha.execute('6LftZbwZAAAAANkMZ7ftrb91Uay1PihCI6oeM2aQ', {action: 'submit'}).then(function(token) {
-              // Add your logic to submit to your backend server here.
+              console.log(token);
           });
         });
       }
