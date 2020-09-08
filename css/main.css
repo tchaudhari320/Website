@@ -1105,7 +1105,7 @@ header .top-bar {
 header .logo {
 	float: left;
 	margin-left: 25px;
-	margin-right: 50px;
+	margin-right: 25px;
 	margin-top: 25px;
 	position: relative;
 }
